@@ -103,7 +103,7 @@ body {
     align-items: center;
     counter-increment: list-counter;
     gap: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgb(82, 39, 39);
     margin-bottom: 10px;
     padding-bottom: 5px;
 }
