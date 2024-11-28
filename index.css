@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #222;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(rgb(240, 213, 158), rgb(246, 236, 217), rgb(240, 213, 158));
+    border: linear-gradient(rgb(240, 213, 158), rgb(246, 236, 217), rgb(240, 213, 158)) 1px solid;
+    border-radius: 10px;
+    margin: 60px auto 0;
+    text-align: center;
+    padding: 40px 35px;
+    min-height: 400px;
+}
+
+.main_name {
+    font-family: monospace;
+    color: rgb(82, 39, 39);
+    font-size: 35px;
+}
+
+.line {
+    font-family: monospace;
+    color: rgb(82, 39, 39);
+    font-weight: lighter;
+}
+
+.add_mark {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.add_mark input {
+    border: 0;
+    outline: 0;
+    background: #ffffff;
+    color: #555;
+    padding: 10px 25px;
+    height: 40px;
+    border-radius: 10px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+
+}
+
+.add_mark button {
+    border: 0;
+    outline: 0;
+    background: #ffffff;
+    cursor: pointer;
+    color: #7e7c7c;
+    padding: 10px 25px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.add_mark button:hover {
+    color: rgb(82, 39, 39);
+}
+
+.mark {
+    text-align: left;
+    color: rgb(82, 39, 39);
+    font-family: Courier New, monospace;
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 450;
+}
+
+.line_mark {
+    margin-bottom: 12px;
+}
+
+.delete_mark {
+    background-color: rgb(82, 39, 39, 0);
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: #7e7c7c;
+    text-decoration: none;
+}
+
+.delete_mark:hover {
+    color: rgb(82, 39, 39);
+}
+
+.mark_item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    counter-increment: list-counter;
+    gap: 10px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+}
+
+.mark_item::before {
+    content: counter(list-counter) ". "; 
+    font-size: 16px; 
+    margin-right: 10px; 
+    color: black;
+}
+
+.task_list {
+    list-style: none; 
+    counter-reset: list-counter; 
+    
+}
+
+.mark_text {
+    flex-grow: 1; 
+    text-align: left; 
+}
