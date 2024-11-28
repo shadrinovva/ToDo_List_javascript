@@ -28,9 +28,9 @@ body {
 }
 
 .line {
-    font-family: monospace;
-    color: rgb(82, 39, 39);
-    font-weight: lighter;
+    border-top: 1px solid rgb(82, 39, 39); 
+    margin: 20px 0; 
+    width: 100%;
 }
 
 .add_mark {
